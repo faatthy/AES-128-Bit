@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="AES_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="AES_tb" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="788604549fs"></ZoomEndTime>
+      <Cursor1Time time="419361000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="175"></NameColumnWidth>
+      <ValueColumnWidth column_width="291"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="63" />
+   <wvobject fp_name="/AES_tb/enable" type="logic">
+      <obj_property name="ElementShortName">enable</obj_property>
+      <obj_property name="ObjectShortName">enable</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AES_tb/plain_text" type="array">
+      <obj_property name="ElementShortName">plain_text[127:0]</obj_property>
+      <obj_property name="ObjectShortName">plain_text[127:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AES_tb/key" type="array">
+      <obj_property name="ElementShortName">key[127:0]</obj_property>
+      <obj_property name="ObjectShortName">key[127:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AES_tb/done" type="logic">
+      <obj_property name="ElementShortName">done</obj_property>
+      <obj_property name="ObjectShortName">done</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AES_tb/cipher_text" type="array">
+      <obj_property name="ElementShortName">cipher_text[127:0]</obj_property>
+      <obj_property name="ObjectShortName">cipher_text[127:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AES_tb/dut/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AES_tb/dut/add_round_en" type="logic">
+      <obj_property name="ElementShortName">add_round_en</obj_property>
+      <obj_property name="ObjectShortName">add_round_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AES_tb/dut/mix_en" type="logic">
+      <obj_property name="ElementShortName">mix_en</obj_property>
+      <obj_property name="ObjectShortName">mix_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AES_tb/dut/mix_done" type="logic">
+      <obj_property name="ElementShortName">mix_done</obj_property>
+      <obj_property name="ObjectShortName">mix_done</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AES_tb/dut/IDLE_STATE" type="array">
+      <obj_property name="ElementShortName">IDLE_STATE[2:0]</obj_property>
+      <obj_property name="ObjectShortName">IDLE_STATE[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AES_tb/dut/Initial_ADD_ROUND_STATE" type="array">
+      <obj_property name="ElementShortName">Initial_ADD_ROUND_STATE[2:0]</obj_property>
+      <obj_property name="ObjectShortName">Initial_ADD_ROUND_STATE[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AES_tb/dut/ADD_ROUND_STATE" type="array">
+      <obj_property name="ElementShortName">ADD_ROUND_STATE[2:0]</obj_property>
+      <obj_property name="ObjectShortName">ADD_ROUND_STATE[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AES_tb/dut/SHIFT_STATE" type="array">
+      <obj_property name="ElementShortName">SHIFT_STATE[2:0]</obj_property>
+      <obj_property name="ObjectShortName">SHIFT_STATE[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AES_tb/dut/rst_n" type="logic">
+      <obj_property name="ElementShortName">rst_n</obj_property>
+      <obj_property name="ObjectShortName">rst_n</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AES_tb/dut/enable" type="logic">
+      <obj_property name="ElementShortName">enable</obj_property>
+      <obj_property name="ObjectShortName">enable</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AES_tb/dut/shift_en" type="logic">
+      <obj_property name="ElementShortName">shift_en</obj_property>
+      <obj_property name="ObjectShortName">shift_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AES_tb/dut/shift_done" type="logic">
+      <obj_property name="ElementShortName">shift_done</obj_property>
+      <obj_property name="ObjectShortName">shift_done</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AES_tb/dut/MIX_STATE" type="array">
+      <obj_property name="ElementShortName">MIX_STATE[2:0]</obj_property>
+      <obj_property name="ObjectShortName">MIX_STATE[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AES_tb/dut/next_state" type="array">
+      <obj_property name="ElementShortName">next_state[2:0]</obj_property>
+      <obj_property name="ObjectShortName">next_state[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AES_tb/dut/key" type="array">
+      <obj_property name="ElementShortName">key[127:0]</obj_property>
+      <obj_property name="ObjectShortName">key[127:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AES_tb/dut/plain_text" type="array">
+      <obj_property name="ElementShortName">plain_text[127:0]</obj_property>
+      <obj_property name="ObjectShortName">plain_text[127:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AES_tb/dut/done" type="logic">
+      <obj_property name="ElementShortName">done</obj_property>
+      <obj_property name="ObjectShortName">done</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AES_tb/dut/shift_out" type="array">
+      <obj_property name="ElementShortName">shift_out[127:0]</obj_property>
+      <obj_property name="ObjectShortName">shift_out[127:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AES_tb/dut/mix_out" type="array">
+      <obj_property name="ElementShortName">mix_out[127:0]</obj_property>
+      <obj_property name="ObjectShortName">mix_out[127:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AES_tb/dut/add_round_in" type="array">
+      <obj_property name="ElementShortName">add_round_in[127:0]</obj_property>
+      <obj_property name="ObjectShortName">add_round_in[127:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AES_tb/dut/add_round_out" type="array">
+      <obj_property name="ElementShortName">add_round_out[127:0]</obj_property>
+      <obj_property name="ObjectShortName">add_round_out[127:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AES_tb/dut/cipher_text" type="array">
+      <obj_property name="ElementShortName">cipher_text[127:0]</obj_property>
+      <obj_property name="ObjectShortName">cipher_text[127:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AES_tb/dut/S_BOX_OUT" type="array">
+      <obj_property name="ElementShortName">S_BOX_OUT[127:0]</obj_property>
+      <obj_property name="ObjectShortName">S_BOX_OUT[127:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AES_tb/dut/add_round_done" type="logic">
+      <obj_property name="ElementShortName">add_round_done</obj_property>
+      <obj_property name="ObjectShortName">add_round_done</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AES_tb/rst_n" type="logic">
+      <obj_property name="ElementShortName">rst_n</obj_property>
+      <obj_property name="ObjectShortName">rst_n</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AES_tb/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AES_tb/dut/key_expansion_en" type="logic">
+      <obj_property name="ElementShortName">key_expansion_en</obj_property>
+      <obj_property name="ObjectShortName">key_expansion_en</obj_property>
+      <obj_property name="CustomSignalColor">#FFA500</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AES_tb/dut/current_state" type="array">
+      <obj_property name="ElementShortName">current_state[2:0]</obj_property>
+      <obj_property name="ObjectShortName">current_state[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AES_tb/dut/key_expansion_done" type="logic">
+      <obj_property name="ElementShortName">key_expansion_done</obj_property>
+      <obj_property name="ObjectShortName">key_expansion_done</obj_property>
+      <obj_property name="CustomSignalColor">#FFD700</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AES_tb/dut/key_expansion_out" type="array">
+      <obj_property name="ElementShortName">key_expansion_out[127:0]</obj_property>
+      <obj_property name="ObjectShortName">key_expansion_out[127:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AES_tb/dut/add_round_key_in" type="array">
+      <obj_property name="ElementShortName">add_round_key_in[127:0]</obj_property>
+      <obj_property name="ObjectShortName">add_round_key_in[127:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AES_tb/dut/key_save" type="array">
+      <obj_property name="ElementShortName">key_save[127:0]</obj_property>
+      <obj_property name="ObjectShortName">key_save[127:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AES_tb/dut/key_save_reg" type="array">
+      <obj_property name="ElementShortName">key_save_reg[127:0]</obj_property>
+      <obj_property name="ObjectShortName">key_save_reg[127:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AES_tb/dut/round" type="array">
+      <obj_property name="ElementShortName">round[3:0]</obj_property>
+      <obj_property name="ObjectShortName">round[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AES_tb/dut/round_comp" type="array">
+      <obj_property name="ElementShortName">round_comp[3:0]</obj_property>
+      <obj_property name="ObjectShortName">round_comp[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AES_tb/dut/EXPANSION_TOP/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AES_tb/dut/EXPANSION_TOP/en" type="logic">
+      <obj_property name="ElementShortName">en</obj_property>
+      <obj_property name="ObjectShortName">en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AES_tb/dut/EXPANSION_TOP/done" type="logic">
+      <obj_property name="ElementShortName">done</obj_property>
+      <obj_property name="ObjectShortName">done</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AES_tb/dut/EXPANSION_TOP/rst_n" type="logic">
+      <obj_property name="ElementShortName">rst_n</obj_property>
+      <obj_property name="ObjectShortName">rst_n</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AES_tb/dut/EXPANSION_TOP/rcon" type="array">
+      <obj_property name="ElementShortName">rcon[31:0]</obj_property>
+      <obj_property name="ObjectShortName">rcon[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AES_tb/dut/EXPANSION_TOP/w0" type="array">
+      <obj_property name="ElementShortName">w0[31:0]</obj_property>
+      <obj_property name="ObjectShortName">w0[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AES_tb/dut/EXPANSION_TOP/w1" type="array">
+      <obj_property name="ElementShortName">w1[31:0]</obj_property>
+      <obj_property name="ObjectShortName">w1[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AES_tb/dut/EXPANSION_TOP/S_BOX_out" type="array">
+      <obj_property name="ElementShortName">S_BOX_out[31:0]</obj_property>
+      <obj_property name="ObjectShortName">S_BOX_out[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AES_tb/dut/EXPANSION_TOP/key_in" type="array">
+      <obj_property name="ElementShortName">key_in[127:0]</obj_property>
+      <obj_property name="ObjectShortName">key_in[127:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AES_tb/dut/EXPANSION_TOP/key_out" type="array">
+      <obj_property name="ElementShortName">key_out[127:0]</obj_property>
+      <obj_property name="ObjectShortName">key_out[127:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AES_tb/dut/EXPANSION_TOP/w2" type="array">
+      <obj_property name="ElementShortName">w2[31:0]</obj_property>
+      <obj_property name="ObjectShortName">w2[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AES_tb/dut/EXPANSION_TOP/w3" type="array">
+      <obj_property name="ElementShortName">w3[31:0]</obj_property>
+      <obj_property name="ObjectShortName">w3[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AES_tb/dut/EXPANSION_TOP/round" type="array">
+      <obj_property name="ElementShortName">round[3:0]</obj_property>
+      <obj_property name="ObjectShortName">round[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AES_tb/dut/shift_top/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AES_tb/dut/shift_top/rst_n" type="logic">
+      <obj_property name="ElementShortName">rst_n</obj_property>
+      <obj_property name="ObjectShortName">rst_n</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AES_tb/dut/shift_top/en" type="logic">
+      <obj_property name="ElementShortName">en</obj_property>
+      <obj_property name="ObjectShortName">en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AES_tb/dut/shift_top/done" type="logic">
+      <obj_property name="ElementShortName">done</obj_property>
+      <obj_property name="ObjectShortName">done</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AES_tb/dut/shift_top/row1" type="array">
+      <obj_property name="ElementShortName">row1[31:0]</obj_property>
+      <obj_property name="ObjectShortName">row1[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AES_tb/dut/shift_top/row2" type="array">
+      <obj_property name="ElementShortName">row2[31:0]</obj_property>
+      <obj_property name="ObjectShortName">row2[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AES_tb/dut/shift_top/row3" type="array">
+      <obj_property name="ElementShortName">row3[31:0]</obj_property>
+      <obj_property name="ObjectShortName">row3[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AES_tb/dut/shift_top/row4" type="array">
+      <obj_property name="ElementShortName">row4[31:0]</obj_property>
+      <obj_property name="ObjectShortName">row4[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AES_tb/dut/shift_top/data_in" type="array">
+      <obj_property name="ElementShortName">data_in[127:0]</obj_property>
+      <obj_property name="ObjectShortName">data_in[127:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AES_tb/dut/shift_top/data_shift" type="array">
+      <obj_property name="ElementShortName">data_shift[127:0]</obj_property>
+      <obj_property name="ObjectShortName">data_shift[127:0]</obj_property>
+   </wvobject>
+</wave_config>

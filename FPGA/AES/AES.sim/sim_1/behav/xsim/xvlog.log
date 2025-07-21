@@ -1,0 +1,12 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/digital/AES/FPGA/AES/AES.srcs/sources_1/new/ADD_ROUND_KEY.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ADD_ROUND_KEY
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/digital/AES/FPGA/AES/AES.srcs/sources_1/new/AES.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AES
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/digital/AES/FPGA/AES/AES.srcs/sources_1/new/KEY_EXPANSION.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module KEY_EXPANSION
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/digital/AES/FPGA/AES/AES.srcs/sources_1/new/MIX_COLUMNS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MIX_COLUMNS
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/digital/AES/FPGA/AES/AES.srcs/sources_1/new/SHIFT_ROWS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SHIFT_ROWS
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/digital/AES/FPGA/AES/AES.srcs/sources_1/new/S_BOX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module S_BOX

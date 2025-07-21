@@ -1,0 +1,50 @@
+D:/digital/AES/RTL/AES_tb.sv {1 {vlog -work work -vopt -sv -stats=none {D:\digital\AES\RTL\AES_tb.sv}
+QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+-- Compiling module AES_tb
+
+Top level modules:
+	AES_tb
+
+} {} {}} D:/digital/AES/RTL/MIX_COLUMNS.sv {1 {vlog -work work -vopt -sv -stats=none {D:\digital\AES\RTL\MIX_COLUMNS.sv}
+QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+-- Compiling module MIX_COLUMNS
+
+Top level modules:
+	MIX_COLUMNS
+
+} {} {}} D:/digital/AES/RTL/S_BOX.sv {1 {vlog -work work -vopt -sv -stats=none {D:\digital\AES\RTL\S_BOX.sv}
+QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+-- Compiling module S_BOX
+
+Top level modules:
+	S_BOX
+
+} {} {}} D:/digital/AES/RTL/SHIFT_ROWS.sv {1 {vlog -work work -vopt -sv -stats=none {D:\digital\AES\RTL\SHIFT_ROWS.sv}
+QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+-- Compiling module SHIFT_ROWS
+
+Top level modules:
+	SHIFT_ROWS
+
+} {} {}} D:/digital/AES/RTL/ADD_ROUND_KEY.sv {1 {vlog -work work -vopt -sv -stats=none {D:\digital\AES\RTL\ADD_ROUND_KEY.sv}
+QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+-- Compiling module ADD_ROUND_KEY
+
+Top level modules:
+	ADD_ROUND_KEY
+
+} {} {}} D:/digital/AES/RTL/KEY_EXPANSION.sv {1 {vlog -work work -vopt -sv -stats=none {D:\digital\AES\RTL\KEY_EXPANSION.sv}
+QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+-- Compiling module KEY_EXPANSION
+
+Top level modules:
+	KEY_EXPANSION
+
+} {} {}} D:/digital/AES/RTL/AES.sv {1 {vlog -work work -vopt -sv -stats=none {D:\digital\AES\RTL\AES.sv}
+QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+-- Compiling module AES
+
+Top level modules:
+	AES
+
+} {} {}}

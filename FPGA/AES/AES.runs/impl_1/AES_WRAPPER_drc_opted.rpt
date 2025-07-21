@@ -1,0 +1,35 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
+| Date         : Mon Jul 21 17:29:05 2025
+| Host         : DESKTOP-0NF6N2J running 64-bit major release  (build 9200)
+| Command      : report_drc -file AES_WRAPPER_drc_opted.rpt -pb AES_WRAPPER_drc_opted.pb -rpx AES_WRAPPER_drc_opted.rpx
+| Design       : AES_WRAPPER
+| Device       : xczu7ev-ffvc1156-2-e
+| Speed File   : -2
+| Design State : Synthesized
+------------------------------------------------------------------------------------------------------------------------
+
+Report DRC
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+           Ruledeck: default
+             Max violations: <unlimited>
+             Violations found: 0
++------+----------+-------------+------------+
+| Rule | Severity | Description | Violations |
++------+----------+-------------+------------+
++------+----------+-------------+------------+
+
+2. REPORT DETAILS
+-----------------
+

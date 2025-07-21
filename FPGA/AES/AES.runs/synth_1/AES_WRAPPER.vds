@@ -1,0 +1,432 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Mon Jul 21 17:11:45 2025
+# Process ID: 28404
+# Current directory: D:/digital/AES/FPGA/AES/AES.runs/synth_1
+# Command line: vivado.exe -log AES_WRAPPER.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source AES_WRAPPER.tcl
+# Log file: D:/digital/AES/FPGA/AES/AES.runs/synth_1/AES_WRAPPER.vds
+# Journal file: D:/digital/AES/FPGA/AES/AES.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source AES_WRAPPER.tcl -notrace
+Command: synth_design -top AES_WRAPPER -part xczu7ev-ffvc1156-2-e
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xczu7ev'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xczu7ev'
+INFO: [Device 21-403] Loading part xczu7ev-ffvc1156-2-e
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 18000 
+WARNING: [Synth 8-2301] loop variable declaration is not allowed in this mode of verilog [D:/digital/AES/FPGA/AES/AES.srcs/sources_1/new/AES_WRAPPER.v:25]
+WARNING: [Synth 8-2301] loop variable declaration is not allowed in this mode of verilog [D:/digital/AES/FPGA/AES/AES.srcs/sources_1/new/AES_WRAPPER.v:77]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1465.344 ; gain = 8.566
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'AES_WRAPPER' [D:/digital/AES/FPGA/AES/AES.srcs/sources_1/new/AES_WRAPPER.v:1]
+INFO: [Synth 8-6157] synthesizing module 'AES' [D:/digital/AES/FPGA/AES/AES.srcs/sources_1/new/AES.v:3]
+	Parameter IDLE_STATE bound to: 3'b000 
+	Parameter Initial_ADD_ROUND_STATE bound to: 3'b001 
+	Parameter ADD_ROUND_STATE bound to: 3'b010 
+	Parameter SHIFT_STATE bound to: 3'b011 
+	Parameter MIX_STATE bound to: 3'b100 
+INFO: [Synth 8-155] case statement is not full and has no default [D:/digital/AES/FPGA/AES/AES.srcs/sources_1/new/AES.v:65]
+INFO: [Synth 8-6157] synthesizing module 'SHIFT_ROWS' [D:/digital/AES/FPGA/AES/AES.srcs/sources_1/new/SHIFT_ROWS.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'SHIFT_ROWS' (1#1) [D:/digital/AES/FPGA/AES/AES.srcs/sources_1/new/SHIFT_ROWS.v:3]
+INFO: [Synth 8-6157] synthesizing module 'MIX_COLUMNS' [D:/digital/AES/FPGA/AES/AES.srcs/sources_1/new/MIX_COLUMNS.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'MIX_COLUMNS' (2#1) [D:/digital/AES/FPGA/AES/AES.srcs/sources_1/new/MIX_COLUMNS.v:1]
+INFO: [Synth 8-6157] synthesizing module 'S_BOX' [D:/digital/AES/FPGA/AES/AES.srcs/sources_1/new/S_BOX.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'S_BOX' (3#1) [D:/digital/AES/FPGA/AES/AES.srcs/sources_1/new/S_BOX.v:3]
+INFO: [Synth 8-6157] synthesizing module 'ADD_ROUND_KEY' [D:/digital/AES/FPGA/AES/AES.srcs/sources_1/new/ADD_ROUND_KEY.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'ADD_ROUND_KEY' (4#1) [D:/digital/AES/FPGA/AES/AES.srcs/sources_1/new/ADD_ROUND_KEY.v:1]
+INFO: [Synth 8-6157] synthesizing module 'KEY_EXPANSION' [D:/digital/AES/FPGA/AES/AES.srcs/sources_1/new/KEY_EXPANSION.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'KEY_EXPANSION' (5#1) [D:/digital/AES/FPGA/AES/AES.srcs/sources_1/new/KEY_EXPANSION.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'AES' (6#1) [D:/digital/AES/FPGA/AES/AES.srcs/sources_1/new/AES.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'AES_WRAPPER' (7#1) [D:/digital/AES/FPGA/AES/AES.srcs/sources_1/new/AES_WRAPPER.v:1]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1509.922 ; gain = 53.145
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1527.852 ; gain = 71.074
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1527.852 ; gain = 71.074
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/digital/AES/FPGA/AES/AES.srcs/constrs_1/new/cons.xdc]
+Finished Parsing XDC File [D:/digital/AES/FPGA/AES/AES.srcs/constrs_1/new/cons.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/digital/AES/FPGA/AES/AES.srcs/constrs_1/new/cons.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/AES_WRAPPER_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/AES_WRAPPER_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1667.930 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 1667.930 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1667.930 ; gain = 211.152
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xczu7ev-ffvc1156-2-e
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1667.930 ; gain = 211.152
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1667.930 ; gain = 211.152
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-327] inferring latch for variable 'round_comp_reg' [D:/digital/AES/FPGA/AES/AES.srcs/sources_1/new/AES.v:110]
+WARNING: [Synth 8-327] inferring latch for variable 'next_state_reg' [D:/digital/AES/FPGA/AES/AES.srcs/sources_1/new/AES.v:68]
+WARNING: [Synth 8-327] inferring latch for variable 'add_round_en_reg' [D:/digital/AES/FPGA/AES/AES.srcs/sources_1/new/AES.v:106]
+WARNING: [Synth 8-327] inferring latch for variable 'add_round_in_reg' [D:/digital/AES/FPGA/AES/AES.srcs/sources_1/new/AES.v:111]
+WARNING: [Synth 8-327] inferring latch for variable 'add_round_key_in_reg' [D:/digital/AES/FPGA/AES/AES.srcs/sources_1/new/AES.v:112]
+WARNING: [Synth 8-327] inferring latch for variable 'key_expansion_en_reg' [D:/digital/AES/FPGA/AES/AES.srcs/sources_1/new/AES.v:109]
+WARNING: [Synth 8-327] inferring latch for variable 'key_save_reg' [D:/digital/AES/FPGA/AES/AES.srcs/sources_1/new/AES.v:113]
+WARNING: [Synth 8-327] inferring latch for variable 'shift_en_reg' [D:/digital/AES/FPGA/AES/AES.srcs/sources_1/new/AES.v:107]
+WARNING: [Synth 8-327] inferring latch for variable 'mix_en_reg' [D:/digital/AES/FPGA/AES/AES.srcs/sources_1/new/AES.v:108]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1667.930 ; gain = 211.152
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 2     
+	   2 Input      4 Bit       Adders := 1     
++---XORs : 
+	   2 Input    128 Bit         XORs := 1     
+	   3 Input     32 Bit         XORs := 1     
+	   2 Input     32 Bit         XORs := 3     
+	   2 Input      8 Bit         XORs := 20    
+	   3 Input      8 Bit         XORs := 10    
+	   5 Input      8 Bit         XORs := 6     
+	   4 Input      8 Bit         XORs := 2     
++---Registers : 
+	              128 Bit    Registers := 6     
+	                8 Bit    Registers := 49    
+	                5 Bit    Registers := 2     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 9     
++---Muxes : 
+	   6 Input    128 Bit        Muxes := 3     
+	   2 Input    128 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 16    
+	   2 Input      5 Bit        Muxes := 2     
+	   6 Input      4 Bit        Muxes := 1     
+	   7 Input      3 Bit        Muxes := 1     
+	   6 Input      1 Bit        Muxes := 8     
+	   2 Input      1 Bit        Muxes := 21    
+	   3 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module AES_WRAPPER 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 2     
++---Registers : 
+	                8 Bit    Registers := 49    
+	                5 Bit    Registers := 2     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input      5 Bit        Muxes := 2     
+	   3 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 20    
+Module SHIFT_ROWS 
+Detailed RTL Component Info : 
++---Registers : 
+	              128 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
+Module MIX_COLUMNS 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      8 Bit         XORs := 20    
+	   3 Input      8 Bit         XORs := 10    
+	   5 Input      8 Bit         XORs := 6     
+	   4 Input      8 Bit         XORs := 2     
++---Registers : 
+	              128 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 16    
+Module ADD_ROUND_KEY 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input    128 Bit         XORs := 1     
++---Registers : 
+	              128 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
+Module KEY_EXPANSION 
+Detailed RTL Component Info : 
++---XORs : 
+	   3 Input     32 Bit         XORs := 1     
+	   2 Input     32 Bit         XORs := 3     
++---Registers : 
+	              128 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
+Module AES 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	              128 Bit    Registers := 2     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   6 Input    128 Bit        Muxes := 3     
+	   2 Input    128 Bit        Muxes := 1     
+	   6 Input      4 Bit        Muxes := 1     
+	   7 Input      3 Bit        Muxes := 1     
+	   6 Input      1 Bit        Muxes := 8     
+	   2 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 1728 (col length:144)
+BRAMs: 624 (col length: RAMB18 144 RAMB36 72)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1667.930 ; gain = 211.152
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++--------------+---------------------------+---------------+----------------+
+|Module Name   | RTL Object                | Depth x Width | Implemented As | 
++--------------+---------------------------+---------------+----------------+
+|S_BOX         | S_MEM                     | 256x8         | LUT            | 
+|S_BOX         | S_MEM                     | 256x8         | LUT            | 
+|S_BOX         | S_MEM                     | 256x8         | LUT            | 
+|S_BOX         | S_MEM                     | 256x8         | LUT            | 
+|S_BOX         | S_MEM                     | 256x8         | LUT            | 
+|S_BOX         | S_MEM                     | 256x8         | LUT            | 
+|S_BOX         | S_MEM                     | 256x8         | LUT            | 
+|S_BOX         | S_MEM                     | 256x8         | LUT            | 
+|S_BOX         | S_MEM                     | 256x8         | LUT            | 
+|S_BOX         | S_MEM                     | 256x8         | LUT            | 
+|S_BOX         | S_MEM                     | 256x8         | LUT            | 
+|S_BOX         | S_MEM                     | 256x8         | LUT            | 
+|S_BOX         | S_MEM                     | 256x8         | LUT            | 
+|S_BOX         | S_MEM                     | 256x8         | LUT            | 
+|KEY_EXPANSION | S_BOX_KEY_EXPANSION/S_MEM | 256x8         | LUT            | 
+|KEY_EXPANSION | S_BOX_KEY_EXPANSION/S_MEM | 256x8         | LUT            | 
+|KEY_EXPANSION | S_BOX_KEY_EXPANSION/S_MEM | 256x8         | LUT            | 
+|KEY_EXPANSION | S_BOX_KEY_EXPANSION/S_MEM | 256x8         | LUT            | 
++--------------+---------------------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 2218.781 ; gain = 762.004
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 2241.027 ; gain = 784.250
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 2241.426 ; gain = 784.648
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 2254.246 ; gain = 797.469
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 2254.246 ; gain = 797.469
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:27 ; elapsed = 00:00:30 . Memory (MB): peak = 2254.246 ; gain = 797.469
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:27 ; elapsed = 00:00:30 . Memory (MB): peak = 2254.246 ; gain = 797.469
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:27 ; elapsed = 00:00:30 . Memory (MB): peak = 2254.246 ; gain = 797.469
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:27 ; elapsed = 00:00:30 . Memory (MB): peak = 2254.246 ; gain = 797.469
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+------+------+
+|      |Cell  |Count |
++------+------+------+
+|1     |BUFG  |     3|
+|2     |LUT1  |     2|
+|3     |LUT2  |   154|
+|4     |LUT3  |    10|
+|5     |LUT4  |   178|
+|6     |LUT5  |   285|
+|7     |LUT6  |   958|
+|8     |MUXF7 |   336|
+|9     |MUXF8 |   136|
+|10    |FDCE  |  1187|
+|11    |LD    |   395|
+|12    |IBUF  |    11|
+|13    |OBUF  |     9|
++------+------+------+
+
+Report Instance Areas: 
++------+--------------------------+--------------+------+
+|      |Instance                  |Module        |Cells |
++------+--------------------------+--------------+------+
+|1     |top                       |              |  3664|
+|2     |  aes_inst                |AES           |  3128|
+|3     |    ADD_ROUND_TOP         |ADD_ROUND_KEY |   772|
+|4     |    EXPANSION_TOP         |KEY_EXPANSION |   751|
+|5     |      S_BOX_KEY_EXPANSION |S_BOX_3       |    96|
+|6     |    MIX_TOP               |MIX_COLUMNS   |   128|
+|7     |    S_TOP1                |S_BOX         |    96|
+|8     |    S_TOP2                |S_BOX_0       |    96|
+|9     |    S_TOP3                |S_BOX_1       |    96|
+|10    |    S_TOP4                |S_BOX_2       |    96|
+|11    |    shift_top             |SHIFT_ROWS    |   419|
++------+--------------------------+--------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:27 ; elapsed = 00:00:30 . Memory (MB): peak = 2254.246 ; gain = 797.469
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 9 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:18 ; elapsed = 00:00:24 . Memory (MB): peak = 2254.246 ; gain = 657.391
+Synthesis Optimization Complete : Time (s): cpu = 00:00:27 ; elapsed = 00:00:30 . Memory (MB): peak = 2254.246 ; gain = 797.469
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 881 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2292.762 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 409 instances were transformed.
+  BUFG => BUFGCE: 3 instances
+  IBUF => IBUF (IBUFCTRL, INBUF): 11 instances
+  LD => LDCE: 395 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+28 Infos, 11 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:44 ; elapsed = 00:00:49 . Memory (MB): peak = 2292.762 ; gain = 1936.855
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2292.762 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'D:/digital/AES/FPGA/AES/AES.runs/synth_1/AES_WRAPPER.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file AES_WRAPPER_utilization_synth.rpt -pb AES_WRAPPER_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Jul 21 17:12:39 2025...

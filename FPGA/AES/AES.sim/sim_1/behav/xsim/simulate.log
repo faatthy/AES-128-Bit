@@ -1,0 +1,22 @@
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+---- AES_WRAPPER Testbench Start ----
+---- Cipher Output ----
+Cipher Byte 0 = 29
+Cipher Byte 1 = c3
+Cipher Byte 2 = 50
+Cipher Byte 3 = 5f
+Cipher Byte 4 = 57
+Cipher Byte 5 = 14
+Cipher Byte 6 = 20
+Cipher Byte 7 = f6
+Cipher Byte 8 = 40
+Cipher Byte 9 = 22
+Cipher Byte 10 = 99
+Cipher Byte 11 = b3
+Cipher Byte 12 = 1a
+Cipher Byte 13 = 02
+Cipher Byte 14 = d7
+Cipher Byte 15 = 3a
+---- AES_WRAPPER Testbench End ----
+$stop called at time : 197 ns : File "D:/digital/AES/FPGA/AES/AES.srcs/sim_1/new/AES_WRAPPER_tb.v" Line 113
