@@ -15,9 +15,8 @@ The wrapper interfaces a standard AES core with serial input/output and control 
 
 ## 🛠️ Block Diagram
 
-<p align="center">
-  <img src="images/aes_wrapper_block.png" alt="AES Wrapper Block Diagram" width="500"/>
-</p>
+<img width="235" height="214" alt="image" src="https://github.com/user-attachments/assets/198ff3d1-6169-464d-bc16-05b99037142e" />
+
 
 ---
 
